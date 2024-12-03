@@ -1,0 +1,124 @@
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to right, #7f83c5, #848cc8); /* Subtle grey-to-white gradient */
+    
+}
+.design{
+    background-color: rgb(123, 123, 181);
+    margin: 20px;
+    padding: 30px;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    background: linear-gradient(90deg, #7b68a2, #7965ac); /* Pink gradient */
+    color: whitesmoke;
+    box-shadow: 0 4px 8px rgba(239, 236, 236, 0.93);
+    border-radius: 20px;
+    width: 30%;
+}
+
+
+header img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: url('https://www.transparenttextures.com/patterns/cubes.png');
+    background-color: #fdfbfb; /* Subtle textured pattern */
+    border-radius: 15px;
+}
+.formDesign{
+    margin: 15px;
+}
+/* Task List */
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.task-item {
+    background: linear-gradient(120deg, #ffffff, #f9f9f9);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.task-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.task-item.completed {
+    background: #d4edda;
+    border-color: #c3e6cb;
+    text-decoration: line-through;
+    color: #155724;
+}
+
+.task-item h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.task-item p {
+    margin: 5px 0;
+    color: #555;
+}
+.btnSelect{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+}
+
+/* Task Filters */
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filters button {
+    flex: 1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+    color: white;
+    font-size: 0.9rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
